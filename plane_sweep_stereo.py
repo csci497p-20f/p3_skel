@@ -78,6 +78,7 @@ for pos, depth in enumerate(depths):
 
     # (TODO) Compute the NCC score between the right and left images.
     # ncc = ...
+    volume.append(ncc)
 
     # generate outputs and report progress:
     # write this slice of the cost volume to a frame of a gif
