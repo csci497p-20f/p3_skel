@@ -23,7 +23,7 @@ class GifWriter(object):
         for filename in self.temp_filenames:
         	frames.append(imageio.imread(filename))
 
-        imageio.mimwrite(self.dest_gif, frames, format='GIF', duration=2.0/100.0, loop=0.0)
+        imageio.mimwrite(self.dest_gif, frames, format='GIF', duration=2.0/100.0, loop=0)
         for filename in self.temp_filenames:
             os.unlink(filename)
         self.closed = True
